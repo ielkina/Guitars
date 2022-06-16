@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="shortcut icon" href="/img/logomin.ico" type="image/x-icon")
+    title Rhythm
+  body
+    .wrapper 
+      header.header
+        .header__container
+          a.header__logo(href="#")
+            img(src="/img/logo-text.svg", alt="Logotype")
+          nav.header__menu.menu
+            ul.menu__list
+              each name in ['Store','Collections','Support']
+                li.menu__item
+                  a.menu__link(href="#")=name
+      main.page
+        section.page__main.main
+          .main__container
+            .main__content
+              h1.main__title
+                != 'Browse top quality <span>Guitars</span> online'
+              p.main__text Explore 50k+ latest collections of branded guitars online with Rhythm.
+              .main__actions.actions-main
+                a.actions-main__button(href="#") Get the App
+                .actions-main__icon
+                  img(src="/img/googl-market.svg", alt="GooglePay")
+                .actions-main__icon
+                  img(src="/img/apple-logo.svg", alt="AppStore")
+            .main__decor 
+              .main__image
+                img(src="/img/header-img.png", alt="Main Decor")
+        
+            
+            
+        
+
