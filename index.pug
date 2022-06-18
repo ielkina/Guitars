@@ -6,6 +6,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="/css/style.css")
     link(rel="shortcut icon" href="/img/logomin.ico" type="image/x-icon")
+    link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
     title Rhythm
   body
     .wrapper 
@@ -114,43 +115,125 @@ html(lang="en")
               .brands__item
                 img(src="/img/takamine.png",alt="Brand Takamine") 
               .brands__item
-                img(src="/img/seagull.png",alt="Brand Seagull") 
+                img(src="/img/seagull.png",alt="Brand Seagull")
+        section.page__why.why
+          .why__container
+            h2.why__title.title
+              != 'Why try <span>Rhythm?</span>'
+            .why__items
+              .why__item.item-why
+                .item-why__icon
+                  img(src="/img/Browsing.png",alt="Browsing")
+                .item-why__title Smooth Browsing
+                .item-why__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .why__item.item-why
+                .item-why__icon
+                  img(src="/img/Delivery.png",alt="Delivery")
+                .item-why__title EASY Delivery 
+                .item-why__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .why__item.item-why
+                .item-why__icon
+                  img(src="/img/payments.png",alt="Payment")
+                .item-why__title SwiFT PAYMENTS
+                .item-why__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        section.page__reviews.reviews
+          .reviews__container
+            h2.reviews__title.title
+              !='What our <span>customer’s</span> say'
+            .reviews__swiper.swiper-reviews.swiper
+              .swiper-reviews__wrapper.swiper-wrapper
+                .swiper-reviews__slide.slide-swiper-reviews.swiper-slide
+                  .slide-swiper-reviews__picture
+                    .slide-swiper-reviews__image
+                      img(src="/img/Foto.jpg",alt="Foto")
+                  .slide-swiper-reviews__body
+                    .slide-swiper-reviews__text “The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”
+                    .slide-swiper-reviews__author
+                      .slide-swiper-reviews__name Ryan Wels
+                      .slide-swiper-reviews__position PROFESSIONAL GUITARIST    
+                .swiper-reviews__slide.slide-swiper-reviews.swiper-slide
+                  .slide-swiper-reviews__picture
+                    .slide-swiper-reviews__image
+                      img(src="/img/Foto.jpg",alt="Foto")
+                  .slide-swiper-reviews__body
+                    .slide-swiper-reviews__text “The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”
+                    .slide-swiper-reviews__author
+                      .slide-swiper-reviews__name Ryan Wels
+                      .slide-swiper-reviews__position PROFESSIONAL GUITARIST    
+                .swiper-reviews__slide.slide-swiper-reviews.swiper-slide
+                  .slide-swiper-reviews__picture
+                    .slide-swiper-reviews__image
+                      img(src="/img/Foto.jpg",alt="Foto")
+                  .slide-swiper-reviews__body
+                    .slide-swiper-reviews__text “The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”
+                    .slide-swiper-reviews__author
+                      .slide-swiper-reviews__name Ryan Wels
+                      .slide-swiper-reviews__position PROFESSIONAL GUITARIST    
+                .swiper-reviews__slide.slide-swiper-reviews.swiper-slide
+                  .slide-swiper-reviews__picture
+                    .slide-swiper-reviews__image
+                      img(src="/img/Foto.jpg",alt="Foto")
+                  .slide-swiper-reviews__body
+                    .slide-swiper-reviews__text “The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”
+                    .slide-swiper-reviews__author
+                      .slide-swiper-reviews__name Ryan Wels
+                      .slide-swiper-reviews__position PROFESSIONAL GUITARIST    
+              .swiper-reviews__pagination.swiper-pagination
+        section.page__favorite.favorite
+          .favorite__container
+            .favorite__body
+              h2.favorite__title.title
+                != 'Browse and buy your <span>favorite guitars</span> with Rhythm.'
+              .favorite__apps.apps-favorite
+                a.apps-favorite__item(href="#")
+                  img(src="/img/googlepay-logo.png",alt="GoogleStore")
+                a.apps-favorite__item(href="#")
+                  img(src="/img/appstorelogo.png",alt="AppStore")
+            .favorite__images
+              img(src="/img/GroupScreen.png",alt="Store Screen")
+      footer.footer
+        .footer__container
+          .footer__body.body-footer
+            .body-footer__column
+              a(href='#',class="body-footer__logo")
+                img(src="/img/Group 296.svg",alt="Footer logo")
+              ul.body-footer__contacts.contacts-footer
+                li.contacts-footer___item
+                  a.contacts-footer__link.contacts-footer__link_mail(href='mailto:Enquiry@Rhythm.com') Enquiry@Rhythm.com
+                li.contacts-footer__item
+                  a.contacts-footer__link.contacts-footer__link_location(href='#') San Francisco
+            .body-footer__column.body-footer__column_full
+              nav.body-footer__menu.menu-footer
+                .menu-footer__column
+                  .menu-footer__title Pages
+                  ul.menu-footer__list
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Store
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Collections
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Support
+                .menu-footer__column
+                  .menu-footer__title Product
+                  ul.menu-footer__list
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Terms
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Privacy Policy
+                    li.menu-footer__item
+                      a.menu-footer__link(href='#') Copyright
+                .menu-footer__column
+                  .body-footer__social.social-footer
+                    .social-footer__title Follow us
+                    .social-footer__items
+                      a.menu-footer__link(href='#')
+                        img(src="/img/Facebook.png",alt="Facebook")
+                      a.menu-footer__link(href='#')
+                        img(src="/img/Twitter.png",alt="Twitter")
+                      a.menu-footer__link(href='#')
+                        img(src="/img/Instagram.png",alt="Instagram")
+          .footer__copy © 2022 Copyright.Rhythm
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    script(src='js/script.js')
 
 
-                //- title.Why try <span>Rhythm?</span>
-
-                //- Smooth Browsing
-                //- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-                //- EASY Delivery
-                //- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-                //- SwiFT PAYMENTS
-                //- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                //- title.What our <span>customer’s</span> say
-
-                //- “The Quality and Delivery is always on time, being a professional guitarist myself I love the customer service the brand provides, highly recommend Rhythm anytime.”
-                //- Ryan Wels
-                //- PROFESSIONAL GUITARIST
-
-                //- title.Browse and buy your <span>favorite guitars</span> with Rhythm.
-
-                //- footer
-                //-   Enquiry@Rhythm.com
-                //-   San Francisco
-
-
-                //-   Pages
-                //-   Store
-                //-   Collections
-                //-   Support
-
-
-                //-   Product
-                //-   Terms
-                //-   Privacy Policy
-                //-   Copyright
-
-                //-   Follow us
